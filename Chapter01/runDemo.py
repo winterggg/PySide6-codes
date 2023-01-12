@@ -5,8 +5,8 @@ from PySide6.QtWidgets import QPushButton, QApplication, QWidget
 
 
 class WinForm(QWidget):
-    def __init__(self, parent=None):
-        super(WinForm, self).__init__(parent)
+    def __init__(self):
+        super().__init__()
         self.setGeometry(300, 300, 250, 150)
         self.setWindowTitle('启动方式1')
         button = QPushButton('Close', self)
